@@ -4,6 +4,7 @@ using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace aplicacioncobach
+using Views;
 {
     public partial class App : Application
     {
@@ -11,7 +12,7 @@ namespace aplicacioncobach
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ProductsPage();
         }
 
         protected override void OnStart()
